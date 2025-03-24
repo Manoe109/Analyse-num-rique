@@ -1,7 +1,7 @@
 import numpy
 import sympy
 
-print("hello world")
+print("hello world!")
 
 #imshow(matrice en arg)
 #double boucle pour moyenner les valeurs
