@@ -1,0 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+#Paramètres de départ:
+a = 3
+b = 2
+c = 4
+d = 2
+e = 0.2
+
+f = 6 #dimension en y du tube
+L = 2*a + 5*c/2 + 3*d/2 #dimension en x du tube
+
+potentiel = [] #variable d'accumulation
+
+for i in range(f): #pas sur de ça
+    potentiel.append(np.linspace(0, L, int(L)))
+
+potentiel_grid = np.array(potentiel) #tranforme la liste en array numpy
+
+print(potentiel_grid)
+
+
+plt.imshow(potentiel_grid)
+plt.show()
