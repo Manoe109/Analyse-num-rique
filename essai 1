@@ -14,13 +14,13 @@ L = 2*a + 5*c/2 + 3*d/2 #dimension en x du tube
 
 potentiel = [] #variable d'accumulation
 
-for i in range(f): #pas sur de ça
-    potentiel.append(np.linspace(0, L, int(L)))
+for i in range(f): #nombre de array en y
+    potentiel.append(np.linspace(0, 1.9, 190)) #chaque array a une longueur de L (discrèt)
 
 potentiel_grid = np.array(potentiel) #tranforme la liste en array numpy
 
 print(potentiel_grid)
 
 
-plt.imshow(potentiel_grid)
+plt.imshow(potentiel_grid, origin='lower' ) #inverse la graduation du y 
 plt.show()
